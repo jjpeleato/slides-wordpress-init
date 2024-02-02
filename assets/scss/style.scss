@@ -1,0 +1,75 @@
+/* Style
+--------------------------------------------------------------------------------------------------------------------- */
+
+.reveal {
+  table {
+    font-size: 22px;
+
+    thead {
+      font-weight: bold;
+      color: white;
+      background: black;
+    }
+  }
+
+  img {
+    border: 0 none;
+    box-shadow: none;
+    max-width: 500px;
+  }
+
+  blockquote {
+    box-shadow: none;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin: var(--r-heading-margin);
+    color: var(--r-heading-color);
+    font-family: var(--r-heading-font);
+    font-weight: var(--r-heading-font-weight);
+    line-height: var(--r-heading-line-height);
+    letter-spacing: var(--r-heading-letter-spacing);
+    text-transform: var(--r-heading-text-transform);
+    text-shadow: var(--r-heading-text-shadow);
+    word-wrap: break-word;
+  }
+
+  .h1 {
+    font-size: var(--r-heading1-size);
+    text-shadow: var(--r-heading1-text-shadow);
+  }
+
+  .h2 {
+    font-size: var(--r-heading2-size);
+  }
+
+  .h3 {
+    font-size: var(--r-heading3-size);
+  }
+
+  .h4 {
+    font-size: var(--r-heading4-size);
+  }
+
+  .h5 {
+    font-size: var(--r-heading5-size);
+  }
+
+  .h6 {
+    font-size: var(--r-heading6-size);
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .img-768 {
+    max-width: 768px;
+    height: auto;
+  }
+}

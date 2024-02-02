@@ -1,0 +1,14 @@
+/* TEAM */
+
+	Developer: José J. Peleato Pradel.
+	Site: https://www.jjpeleato.com/
+	Twitter: @jjpeleato
+	From: Tardienta, Huesca, Aragón, Spain
+
+/* SITE */
+
+	Last update: 2100/12/31
+	Standards: HTML5, CSS3, ECMAScript 6
+	Doctype: HTML5
+	Components: reveal.js.
+	IDE: PhpStorm, Visual Studio Code

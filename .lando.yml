@@ -1,0 +1,39 @@
+# See: https://lando.dev/
+
+name: slidesstarter
+
+# See: https://docs.lando.dev/core/v3/proxy.html
+proxy:
+  appserver:
+    - web.slidesstarter.lndo.site
+  node:
+    - node.slidesstarter.lndo.site
+
+# See: https://docs.lando.dev/core/v3/services.html
+services:
+  appserver:
+    type: nginx
+    ssl: true
+    webroot: public
+    run_as_root:
+      - "chown www-data: -R /app"
+  node:
+    type: node:18
+    globals:
+      npm: "latest"
+      yarn: "latest"
+      gulp-cli: "latest"
+
+# See: https://docs.lando.dev/core/v3/tooling.html
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  gulp:
+    service: node
+
+# See: https://docs.lando.dev/core/v3/events.html
+events:
+  post-start:
+    - node: cd $LANDO_MOUNT && npm install --save-dev && gulp

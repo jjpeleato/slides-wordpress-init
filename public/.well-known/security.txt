@@ -1,0 +1,4 @@
+Contact: https://www.jjpeleato.com/#contact
+Expires: 2050-12-31T22:59:00.000Z
+Preferred-Languages: es
+Canonical: https://example.com/.well-known/security.txt
