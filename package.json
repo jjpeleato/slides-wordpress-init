@@ -1,7 +1,7 @@
 {
-	"name": "slides-starter",
+	"name": "wordpress-init",
 	"version": "0.1.0",
-	"description": "Slides starter boilerplate",
+	"description": "Presentation made for a WordPress initiation workshop",
 	"keywords": [
 		"reveal.js",
 		"lando",
@@ -15,7 +15,7 @@
 	"main": "gulpfile.babel.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jjpeleato/slides-starter-boilerplate.git"
+		"url": "git+https://github.com/jjpeleato/slides-wordpress-init.git"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.4.0",
