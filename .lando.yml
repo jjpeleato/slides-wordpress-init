@@ -1,13 +1,13 @@
 # See: https://lando.dev/
 
-name: slidesstarter
+name: wordpressinit
 
 # See: https://docs.lando.dev/core/v3/proxy.html
 proxy:
   appserver:
-    - web.slidesstarter.lndo.site
+    - web.wordpressinit.lndo.site
   node:
-    - node.slidesstarter.lndo.site
+    - node.wordpressinit.lndo.site
 
 # See: https://docs.lando.dev/core/v3/services.html
 services:

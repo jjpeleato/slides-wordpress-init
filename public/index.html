@@ -8,28 +8,28 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!-- Title -->
-		<title>Slides starter boilerplate by @jjpeleato</title>
+		<title>Introducción a WordPress by @jjpeleato</title>
 		<!-- Information -->
-		<meta name="description" content="Slides starter boilerplate by @jjpeleato">
+		<meta name="description" content="Taller de introducción a WordPress by @jjpeleato">
 		<meta name="author" content="@jjpeleato">
 		<!-- Datetime -->
-		<meta name="content_origin" content="2023-05-03">
-		<meta name="content_updated" content="2023-05-03">
-		<meta name="minor_updates" content="2023-05-03">
+		<meta name="content_origin" content="2024-02-02">
+		<meta name="content_updated" content="2024-02-02">
+		<meta name="minor_updates" content="2024-02-02">
 		<!-- Social media -->
 		<meta property="og:locale" content="en_GB">
 		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="Slides starter boilerplate">
-		<meta property="og:title" content="Slides starter boilerplate">
-		<meta property="og:description" content="Slides starter boilerplate by @jjpeleato">
-		<meta property="og:url" content="https://example.com/">
-		<meta property="og:image" content="https://example.com/image-share.png">
+		<meta property="og:site_name" content="Introducción a WordPress by @jjpeleato">
+		<meta property="og:title" content="Introducción a WordPress by @jjpeleato">
+		<meta property="og:description" content="Taller de introducción a WordPress by @jjpeleato">
+		<meta property="og:url" content="https://jjpeleato.com/courses/initwordpress/">
+		<meta property="og:image" content="https://jjpeleato.com/courses/initwordpress/image-share.png">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="Slides starter boilerplate">
-		<meta name="twitter:description" content="Slides starter boilerplate by @jjpeleato">
+		<meta name="twitter:title" content="Introducción a WordPress by @jjpeleato">
+		<meta name="twitter:description" content="Taller de introducción a WordPress by @jjpeleato">
 		<meta name="twitter:site" content="@jjpeleato">
 		<meta name="twitter:creator" content="@jjpeleato">
-		<meta name="twitter:image" content="https://example.com/image-share.png">
+		<meta name="twitter:image" content="https://jjpeleato.com/courses/initwordpress/image-share.png">
 		<!-- Geolocation -->
 		<meta name="geo.region" content="ES-AR">
 		<meta name="geo.placename" content="Huesca">
@@ -56,22 +56,442 @@
 				<!-- Workshop presentation -->
 				<section>
 					<section>
-						<h1>Slides starter boilerplate</h1>
-						<blockquote>"For any presentation"</blockquote>
-						<p><i class="fa-solid fa-link"></i> <a rel="nofollow" href="#" target="_blank" title="Short link">https://bit.ly/#</a></p>
+						<h2>Taller</h2>
+						<h1>Iniciación en WordPress</h1>
+						<blockquote>"Todo tiene un comienzo y WordPress te sorprenderá"</blockquote>
 					</section>
 					<section>
-						<p class="h4">Hello and welcome!</p>
-						<p>My name is <strong>José J. Peleato Pradel</strong>.</p>
-						<p><small>by <a href="https://www.jjpeleato.com/" target="_blank" title="by JJPeleato">jjpeleato.com</a></small></p>
+						<h4>¡Hola y bienvenid@s!</h4>
+						<p>Mi nombre es <strong>José J. Peleato Pradel</strong>.</p>
+						<p><small>by <a href="https://www.jjpeleato.com" target="_blank" title="JJPeleato">jjpeleato.com</a></small></p>
+					</section>
+				</section>
+
+				<!-- WordPress -->
+				<section>
+					<section>
+						<h3>WordPress</h3>
+						<p>WordPress, es un sistema de gestión de contenidos que ha alcanzado una gran relevancia con una cuota del 30.6% de uso a nivel mundial, 1 de cada 4 páginas web esta creada en WordPress.</p>
+						<p>Dada la importancia de ser una de las plataformas más utilizadas, a diario se convierte en objetivo de múltiples ciberataques.</p>
+						<p>Ver estadísticas <a href="https://goo.gl/OvTxqJ" target="_blank">W2Techs</a></p>
+					</section>
+					<section>
+						<h3>Estructura base de datos</h3>
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/bbdd.jpg"  alt="Base de datos de WordPress" title="Base de datos de WordPress">
+					</section>
+					<section>
+						<h3>Estructura base de datos</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Tabla</th>
+									<th>Definición</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>wp_commentmeta</td>
+									<td>Meta datos que incorporan cada comentario almacenado en wp_comments.</td>
+								</tr>
+								<tr>
+									<td>wp_comments</td>
+									<td>Almacenamiento de comentarios.</td>
+								</tr>
+								<tr>
+									<td>wp_links</td>
+									<td>Información relativa a los enlaces añadidos en la funcionalidad de enlaces de WordPress. Obsoleta actualmente.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Estructura base de datos</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Tabla</th>
+									<th>Definición</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>wp_options</td>
+									<td>Almacenamiento de todos los ajustes de configuración de WordPress y plugins gestionado a través del panel de administración.</td>
+								</tr>
+								<tr>
+									<td>wp_postmeta</td>
+									<td>Meta datos que incorporan cada posts almacenado en wp_posts.</td>
+								</tr>
+								<tr>
+									<td>wp_posts</td>
+									<td>Almacenamiento de entradas, páginas y elementos de menú.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Estructura base de datos</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Tabla</th>
+									<th>Definición</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>wp_termmeta</td>
+									<td>Meta datos que incorporan cada categoría/etiqueta.</td>
+								</tr>
+								<tr>
+									<td>wp_terms</td>
+									<td>Almacenamiento de categorías, tanto de las entradas como de enlaces y las etiquetas de las entradas.</td>
+								</tr>
+								<tr>
+									<td>wp_term_relationships</td>
+									<td>Asociación de las entradas y enlaces que hacen referencia a categorías y/o etiquetas.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Estructura base de datos</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Tabla</th>
+									<th>Definición</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>wp_term_taxonomy</td>
+									<td>Describe la taxonomía (categoría, enlace o etiqueta) de cada línea de la tabla wp_terms.</td>
+								</tr>
+								<tr>
+									<td>wp_usermeta</td>
+									<td>Almacenamiento de la información denominada data que cada usuario contiene.</td>
+								</tr>
+								<tr>
+									<td>wp_users</td>
+									<td>Lista de usuarios.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Estructura directorios</h3>
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/directory.jpg" class="img-h-450" alt="Estructura directorios" title="Estructura directorios">
+					</section>
+					<section>
+						<h3>Estructura directorios</h3>
+						<p>La estructura de archivos y carpetas de una instalación WordPress es muy sencilla. Consta de tres carpetas principales: wp-admin, wp-content y wp-includes y el conjunto de archivos de la carpeta raíz y subdirectorios, de los cuales destacamos los ficheros wp-config.php y .htaccess situados en el directorio base.</p>
+					</section>
+					<section>
+						<h3>wp-admin</h3>
+						<p>Directorio donde se almacena los ficheros de backend del core de WordPress.</p>
+					</section>
+					<section>
+						<h3>wp-content</h3>
+						<p>Directorio donde se almacenan los contenidos específicos de nuestro proyecto.</p>
+					</section>
+					<section>
+						<h3>plugins</h3>
+						<p>Directorio donde se almacenan los plugins de terceros.</p>
+					</section>
+					<section>
+						<h3>themes</h3>
+						<p>Directorio donde se almacenan los themes que hay en nuestra aplicación. Puedes haber un número indeterminado de themes pero solo uno de ellos estará activo. Existe la metodología de trabajo basada en una estructura de theme padre y theme hijo (usando el hijo como theme activo).</p>
+					</section>
+					<section>
+						<h3>uploads</h3>
+						<p>Directorio principal donde se almacenan todos los ficheros que se suban a la aplicación. Es el único directorio que va a tener permisos de escritura.</p>
+					</section>
+					<section>
+						<h3>wp-includes</h3>
+						<p>Directorio principal core de WordPress.</p>
+					</section>
+					<section>
+						<h3>wp-config.php</h3>
+						<p>Fichero de configuración de WordPress, donde se almacenan las credenciales para conectar contra la base de datos, sistema de autentificación Uniques Keys y Salts, pefijo de las tablas de las base de datos, WordPress Debug, etc.</p>
+						<p>Recomendado tener permisos de solo escritura 444.</p>
+					</section>
+					<section>
+						<h3>.htaccess</h3>
+						<p>Fichero de configuración de servidor, que genera WordPress de forma automática con la instalación de la aplicación. Tiene como función mejorar la seguridad de WordPress. Ciertos plugins escriben en este fichero para aplicar seguridad u optimización al sitio web.</p>
+						<p>Recomendado tener permisos de solo escritura 444.</p>
+					</section>
+				</section>
+
+				<!-- Installation WordPress -->
+				<section>
+					<section>
+						<h3>Instalación WordPress desde 0</h3>
+					</section>
+					<section>
+						<p>1) Descargar última versión WordPress desde la página oficial y descomprimir ficheros en carpeta raíz.</p>
+						<p><a href="https://wordpress.org/" target="_blank">https://wordpress.org/</a></p>
+						<p><a href="https://es.wordpress.org/" target="_blank">https://es.wordpress.org/</a></p>
+					</section>
+					<section>
+						<p>2) Creación de BBDD a utilizar.</p>
+						<pre><code>CREATE DATABASE dbname CHARACTER SET utf8 COLLATE utf8_general_ci;</code></pre>
+					</section>
+					<section>
+						<p>3) Modificación fichero configuración. En la carpeta raíz crear una copia y renombrar el fichero wp-config-sample.php a wp-config.php. Y modificamos las siguientes líneas de código.</p>
+						<pre><code>define('DB_NAME', 'dbname ');
+define('DB_USER', 'dbuser');
+define('DB_PASSWORD', 'dbpassword');
+define('DB_HOST', 'localhost');
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATE', 'utf8_general_ci');</code></pre>
+					</section>
+					<section>
+						<p>4) Modificar prefijo "wp_" en el proceso de instalación para la creación de tablas en la base de datos.</p>
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/bbdd-good-practise.png" title="Modificar prefijo" alt="Modificar prefijo">
+					</section>
+					<section>
+						<p>5) Modificación de seguridad. Visitamos la página web y sustituimos el código PHP en el fichero de configuración wp-config.php.</p>
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/auth-salt.png" title="Modificación de seguridad" alt="Modificación de seguridad">
+						<p><a href="https://api.wordpress.org/secret-key/1.1/salt/" target="_blank">https://api.wordpress.org/secret-key/1.1/salt/</a></p>
+					</section>
+					<section>
+						<p>6) Para desarrolladores. Activamos el modo debug de WordPress.</p>
+						<pre><code>define('WP_DEBUG', true);</code></pre>
+					</section>
+					<section>
+						<p>7) Visitar la página web desde nuestro navegador y continuar los pasos que nos indica la interfaz para la correcta instalación. Nos solicitara una serie de información necesaria. Todos los datos pueden ser modificados a posterior desde el panel de administración o desde la base de datos. Trabajar con contraseñas robustas.</p>
+					</section>
+					<section>
+						<p>8) Eliminar archivo readme.html y licence.txt donde aparece la versión de WordPress.</p>
+					</section>
+					<section>
+						<p>9) Modificar instalación WordPress a subdirectorio con un nombre de 6 caracteres aleatorios compuesto por números, letras minúsculas y sin caracteres especiales.</p>
+					</section>
+					<section>
+						<p>Entramos a la sección Ajustes > Generales desde el panel de administración.</p>
+						<ul>
+							<li>
+								Dirección de WordPress (URL): Introducir dominio más nombre de carpeta separado por “/”<br>
+								<a href="#" title="https://www.example.com/a3x91l">https://www.example.com/a3x91l</a>
+							</li>
+							<li>
+								Dirección del sitio (URL): Introducir dirección de la página web (nombre dominio) sin incluir el nombre de la carpeta.<br>
+								<a href="#" title="https://www.example.com">https://www.example.com</a>
+							</li>
+						</ul>
+						<p><strong>Guardamos cambios</strong>. No intentes visitar la página web, nos mostrará un mensaje de error.</p>
+					</section>
+					<section>
+						<p>Copiar (no cortar/mover) fichero index.php desde el directorio donde está instalado WordPress al directorio raíz de nuestra web, normalmente carpeta public_html.</p>
+					</section>
+					<section>
+						<p>Editar código fichero index.php </p>
+						<pre>Antes: <code>require('./wp-blog-header.php');</code></pre>
+						<pre>Después: <code>require('./a3x91l/wp-blog-header.php');</code></pre>
+					</section>
+					<section>
+						<p>10) Entramos a la sección Ajustes > Enlaces permanentes y seleccionamos Estructura personalizada agregamos la siguiente sintaxis: </p>
+						<pre><code>/%post_id%/%postname%/</code></pre>
+						<p>Guardamos cambios para que WordPress genere toda la nueva estructura de enlaces permanentes.</p>
+					</section>
+					<section>
+						<p>11) Aplicar buenas prácticas pos instalación.</p>
+						<ul>
+							<li>Instalación plugin seguridad</li>
+							<li>Política de copias de seguridad</li>
+							<li>Permisos directorios y ficheros</li>
+							<li>Permisos wp-config.php</li>
+							<li>Editar .htaccess y modificar permisos</li>
+							<li>Bloquear Login</li>
+							<li>SPAM</li>
+							<li>...</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Installation WordPress from backup -->
+				<section>
+					<section>
+						<h3>Instalación WordPress desde copia de seguridad</h3>
+						<p>Para poder realizar este paso es necesario tener una copia de seguridad estable tanto del código, cómo de la base de datos en formato SQL.</p>
+					</section>
+					<section>
+						<p>1) Descomprimir ficheros de la copia de seguridad en la carpeta raíz.</p>
+					</section>
+					<section>
+						<p>2) Creación de BBDD a utilizar según el nombre que existe en el fichero de configuración.</p>
+						<pre><code>CREATE DATABASE dbname CHARACTER SET utf8;</code></pre>
+					</section>
+					<section>
+						<p>3) Ejecutar script SQL de la copia de seguridad de la BBDD o importar desde phpMyAdmin.</p>
+						<pre><code>mysql –uroot –ppassword
+use dbname;
+source script.sql;</code></pre>
+					</section>
+					<section>
+						<p>4) IMPORTANTE. Modificar registros URL’s de configuración en la tabla “wp_options” en la base de datos por la dirección nueva.</p>
+						<pre><code>UPDATE 'wp_options'
+SET 'option_value' = 'http://localhost/wordpress'
+WHERE 'option_name' = 'siteurl';</code></pre>
+						<pre><code>UPDATE 'wp_options'
+SET 'option_value' = 'http://localhost/wordpress'
+WHERE 'option_name' = 'home';</code></pre>
+					</section>
+					<section>
+						<p>5) IMPORTANTE. Existe la posibilidad de que no tengamos acceso al usuario administrador de WordPress. Procedemos a modificar el usuario desde la base de datos.</p>
+						<pre><code>UPDATE 'wp_users'
+SET 'user_login' = 'example',
+    'user_email' = 'jjpeleato@example.com',
+    'user_pass' = MD5('1234'),
+    'user_nicename' = 'example',
+    'user_status' = '0',
+    'display_name' = 'example'
+WHERE 'ID' = 1;</code></pre>
+					</section>
+					<section>
+						<p>6) Una vez realizado todos los pasos visitamos la página WordPress y aplicamos buenas prácticas.</p>
+					</section>
+				</section>
+
+				<!-- WordPress Themes -->
+				<section>
+					<section>
+						<h3>WordPress Themes</h3>
+					</section>
+					<section>
+						<h4>Free themes</h4>
+						<p><a href="https://wordpress.org/themes/" target="_blank">https://wordpress.org/themes/</a></p>
+						<h4>Premium themes</h4>
+						<p><a href="https://themeforest.net" target="_blank">https://themeforest.net</a></p>
+						<p><a href="https://elegantthemes.com" target="_blank">https://elegantthemes.com</a></p>
+					</section>
+					<section>
+						<h3>Como crear un tema hijo en WordPress</h3>
+					</section>
+					<section>
+						<p>1) Crear carpeta dentro de /wp-content/themes como si otro tema fuera. Aunque es permitido nombrarla como se quiera, es recomendable por buenas prácticas darle a la carpeta un nombre identificativo según el theme padre</p>
+					</section>
+					<section>
+						<p>Crear hoja de estilos, fichero <strong>style.css</strong> dentro de la carpeta child themes. Una vez creado copiar la cabecera del fichero style.css del theme</p>
+					</section>
+					<section>
+                        <pre><code>/*
+Theme Name: Child Themes
+Theme URI: https://example.com
+Version: 4.0
+Description: Tema hijo de Themes.
+Author: @jjpeleato
+Author URI: https://www.jjpeleato.com
+Template: directory-name-of-theme
+*/
+@import url("../themes/style.css");
+/*------ Empezar a añadir cambios ------*/</code></pre>
+					</section>
+					<section>
+						<ul>
+							<li><strong>Theme name</strong>: Introducir cualquier nombre con relación al tema padre y diferente.</li>
+							<li><strong>Template</strong>: Nombre de la carpeta del tema padre. Obligatorio, copiar el nombre exacto, sin cambio alguno o no funcionará.</li>
+							<li><strong>@import url('...')</strong>: Herencia de la hoja de estilos original.</li>
+						</ul>
+					</section>
+					<section>
+						<p>La parte más importante de la creación de un child theme es el correcto uso de las variables “template” y “@import” de esta forma WordPress reconoce de forma automática la herencia y poder sobrescribir ficheros, funcionalidades y estilos.</p>
+					</section>
+				</section>
+
+				<!-- WordPress Plugins -->
+				<section>
+					<section>
+						<h3>WordPress Plugins</h3>
+						<p>Plugin (complemento) es una aplicación (o programa informático) que se relaciona con otros complementos o con el núcleo para agregarle una función nueva y generalmente muy específica. Esta aplicación adicional es ejecutada por la aplicación principal e interactúan por medio de la Interfaz de Programación de Aplicaciones (API). También se conoce por los términos en inglés, plug-in o add-on.</p>
+					</section>
+					<section>
+						<p>Los plugins de WordPress permiten de forma sencilla la modificación, personalización y mejora del núcleo de WordPress y añadir funcionalidad a este.</p>
+						<p>Un plugin de WordPress es un programa, o un conjunto de una o varias funciones, escritas en el lenguaje de script PHP, que añaden un conjunto especifico de características o servicios que pueden integrarse en la web utilizando puntos de acceso y métodos provistos por una Interfaz de Programación de Aplicaciones (API) de WordPress.</p>
+					</section>
+					<section>
+						<h3>Plugins de seguridad</h3>
+						<ul>
+							<li>Wordfence Security</li>
+							<li>All In One WP Security & Firewall</li>
+							<li>iThemes Security</li>
+							<li>Sucuri Security</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins útiles seguridad</h3>
+						<ul>
+							<li>Hide My WP</li>
+							<li>Rename wp-login.php</li>
+							<li>Limit Login Attempts</li>
+							<li>WP Captcha o WP reCaptcha</li>
+							<li>Emergency password reset</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins útiles</h3>
+						<ul>
+							<li>Akismet</li>
+							<li>WP-SpamShield Anti-Spam</li>
+							<li>Clone Posts</li>
+							<li>Contextual Related Posts</li>
+							<li>Simple 301 Redirects</li>
+							<li>Cookie Law Info</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins BBDD</h3>
+						<ul>
+							<li>WP Optimize</li>
+							<li>WordPress Import</li>
+							<li>WP Migrate DB</li>
+							<li>BackWPUP</li>
+							<li>Duplicator</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins de cache y optimización</h3>
+						<ul>
+							<li>WP Rocket</li>
+							<li>Hyper Cache</li>
+							<li>WP Super Cache</li>
+							<li>WP Total Cache</li>
+							<li>EWWW Image Optimizer</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins Google</h3>
+						<ul>
+							<li>Yoast SEO</li>
+							<li>All in One SEO Pack</li>
+							<li>Google Analytics by MonsterInsights</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins FORMS y EMAIL</h3>
+						<ul>
+							<li>Gravity Form</li>
+							<li>Contact Form 7</li>
+							<li>Contact Form DB</li>
+							<li>Really Simple CAPTCHA</li>
+							<li>Easy WP SMTP</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Plugins Ecommerce</h3>
+						<ul>
+							<li>WooCommerce</li>
+							<li>RedSys GateWay for WooCommerce</li>
+						</ul>
 					</section>
 				</section>
 
 				<!-- Thank you -->
 				<section>
-					<p class="h4">END!</p>
-					<p>Thank you very much!</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/merci.gif" title="Thank you very much!" alt="Thank you very much!">
+					<h3>¡FIN!</h3>
+					<blockquote>Simplemente, GRACIAS</blockquote>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/merci.gif" title="Gracias" alt="Gracias">
 				</section>
 			</div>
 		</div>

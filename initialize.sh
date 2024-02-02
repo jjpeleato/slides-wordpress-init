@@ -12,7 +12,7 @@
 #
 
 # I recommend SSH connection. Example: git@github.com:jjpeleato/slides-starter-boilerplate.git
-GIT="git@github.com:jjpeleato/slides-wordpress-init.git"
+GIT="~"
 
 # Check Git uri is not empty.
 if [ "$GIT" = "~" ] ; then
@@ -31,11 +31,6 @@ if [ "$answer" != "${answer#[Yy]}" ] ; then
 	echo
     echo "Sure! Cross your fingers and continue."
     sleep 1
-
-    # START: Delete me
-    # echo "For security! if necessary delete me and the exit command in the code and run try again."
-    # exit
-    # END: Delete me
 else
     echo
     echo "Good bye! Stop initialize."
