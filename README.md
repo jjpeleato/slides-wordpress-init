@@ -1,13 +1,13 @@
-# Slides: Starter boilerplate
+# Slides: Introduction to WordPress
 
-Short or long description.
+Presentation made for a WordPress initiation workshop.
 
 ## Environment
 
-- LOCAL: http://web.slidesstarter.lndo.site/
+- LOCAL: http://web.wordpressinit.lndo.site/
 - DEV: ~
 - PRE: ~
-- PRO: ~
+- PRO: https://jjpeleato.com/courses/initwordpress/
 
 ## Project
 
